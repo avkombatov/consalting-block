@@ -1,0 +1,143 @@
+.header {
+    padding-top: 13px;
+
+    &__top {
+        height: 38px;
+        background: #F8F8FB;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 135%;
+        color: #8B8B8F;
+    }
+
+    &__location {
+        display: flex;
+        align-items: center;
+    }
+
+    &__address {
+        margin-right: 20px;
+    }
+
+    &__mail {
+        color: #8B8B8F;
+
+        &:hover {
+            color: $hoverColor;
+        }
+    }
+
+    &__bottom {
+
+        height: 85px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        a {
+            color: #101628;
+        }
+    }
+
+    &__logo-img {
+        height: 47px;
+        width: 58px;
+        margin-right: 7px;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo-name {
+        font-size: 18px;
+        font-weight: 700;
+
+    }
+
+    &__span-pro {
+        font-weight: 500;
+    }
+
+    &__ul {
+        display: flex;
+
+    }
+
+    &__arrow-down {
+        display: block;
+        margin-top: 0px;
+        margin-left: 5px;
+    }
+
+    &__li_flex {
+        display: flex;
+    }
+
+    &__ul li:not(:last-child) {
+        margin-right: 20px;
+    }
+
+    &__li-a {
+        font-weight: 600;
+        font-size: 15px;
+
+        &:hover {
+            color: $hoverColor;
+        }
+
+        &_flex {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__arrow-down {
+        width: 8px;
+        height: 6px;
+        fill: #46A44E
+    }
+
+    &__contacts {
+        display: flex;
+        align-items: center;
+    }
+
+    &__telegram {
+        margin-right: 17px;
+    }
+
+    &__message {
+        margin-right: 30px;
+    }
+
+    &__phone {
+        text-align: right;
+    }
+
+    &__span-phone {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 135%;
+
+        &:hover {
+            color: $hoverColor;
+        }
+    }
+
+    &__span-call {
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 120%;
+        color: $hoverColor;
+        margin-left: 35px;
+
+        &:hover {
+            color: #86C58B;
+        }
+    }
+}

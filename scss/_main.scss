@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+}
+
+a {
+    text-decoration: none;
+   
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.center-header {
+    padding-left: calc(50% - 585px);
+    padding-right: calc(50% - 585px);
+}
+
+.telegram {
+    width: 22px;
+    height: 21px;
+    fill: #CDD2DD;
+
+    &:hover {
+        fill:#28A8E9;
+               
+    }
+}
+.whatsapp{
+    height: 24px;
+    width: 24px;
+    fill: #CDD2DD;
+    &:hover{
+        fill: #0DC143;
+    }
+}
