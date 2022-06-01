@@ -37,6 +37,34 @@ ul li {
   fill: #0DC143;
 }
 
+.video {
+  width: 20px;
+  height: 14px;
+}
+
+.offer,
+.other {
+  width: 20px;
+  height: 20px;
+}
+
+.price {
+  width: 11px;
+  height: 15px;
+}
+
+.case,
+.danger,
+.answer {
+  height: 18px;
+  width: 18px;
+}
+
+.calculator {
+  width: 20px;
+  height: 18px;
+}
+
 .header {
   padding-top: 13px;
 }
@@ -150,6 +178,8 @@ ul li {
 
 .header__li-a:hover {
   color: #0DC143;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .header__li-a_flex {
@@ -208,5 +238,61 @@ ul li {
 
 .header__span-call:hover {
   color: #86C58B;
+}
+
+.service {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.service__nav {
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 40px;
+}
+
+.service__li {
+  margin-bottom: 30px;
+}
+
+.service__li-a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.service__li-a:hover .service__li-title {
+  color: #0DC143;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.service__li-title {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 135%;
+  color: #101628;
+  max-width: 120px;
+}
+
+.service__logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #F8F8FB;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 25px;
+  fill: black;
 }
 /*# sourceMappingURL=style.css.map */

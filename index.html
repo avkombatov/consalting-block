@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,58 +15,142 @@
 </head>
 
 <body>
-    
-        <header class="header__top center-header">
-            <div class="header__location">
-                <p class="header__address">г. Одинцово, ул. Молодёжная 46с1</p>
-                <a class="header__mail" href="#">info-consaltingpro@mail.ru</a>
+    <header class="header__top center-header">
+        <div class="header__location">
+            <p class="header__address">г. Одинцово, ул. Молодёжная 46с1</p>
+            <a class="header__mail" href="#">info-consaltingpro@mail.ru</a>
+        </div>
+        <div class="header__timetable">
+            <p class="header__timetable-p">По будням, с 10:00 до 20:00</p>
+        </div>
+    </header>
+    <header class="header__bottom center-header">
+        <a href="#" class="header__logo">
+            <img class="header__logo-img" src="img/logo.png" alt="logo">
+            <p href="#" class="header__logo-name">CONSALTING<br><span class="header__span-pro">PRO</span></p>
+        </a>
+        <nav class="header__nav">
+            <ul class="header__ul">
+                <li class="header__li"><a class="header__li-a" href="#">О компании</a></li>
+                <li class="header__li "><a class="header__li-a header__li-a_flex" href="#">Услуги
+                        <svg class="header__arrow-down">
+                            <use xlink:href="sprite.svg#arrow-down"></use>
+                        </svg>
+                    </a></li>
+                <li class="header__li"><a class="header__li-a" href="#">Кейсы</a></li>
+                <li class="header__li"><a class="header__li-a" href="#">Стоимость</a></li>
+                <li class="header__li"><a class="header__li-a" href="#">Отзывы</a></li>
+                <li class="header__li"><a class="header__li-a" href="#">Калькулятор</a></li>
+                <li class="header__li"><a class="header__li-a" href="#">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="header__contacts">
+            <div class="header__message">
+                <a href="#">
+                    <svg class="telegram header__telegram">
+                        <use xlink:href="sprite.svg#telegram"></use>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="whatsapp">
+                        <use xlink:href="sprite.svg#whatsapp"></use>
+                    </svg>
+                </a>
+
             </div>
-            <div class="header__timetable">
-                <p class="header__timetable-p">По будням, с 10:00 до 20:00</p>
+            <div class="header__phone">
+                <a href="#" class="header__phone-a"><span class="header__span-phone">8 499-391-00-09</span><br>
+                    <span class="header__span-call">Обратный звонок</span></a>
+
             </div>
-        </header>
-        <header class="header__bottom center-header">
-            <a href="#" class="header__logo">
-                <img class="header__logo-img" src="img/logo.png" alt="logo">
-                <p href="#" class="header__logo-name">CONSALTING<br><span class="header__span-pro">PRO</span></p>
-            </a>
-            <nav class="header__nav">
-                <ul class="header__ul">
-                    <li class="header__li"><a class="header__li-a" href="#">О компании</a></li>
-                    <li class="header__li "><a class="header__li-a header__li-a_flex" href="#">Услуги
-                            <svg class="header__arrow-down">
-                                <use xlink:href="sprite.svg#arrow-down"></use>
+        </div>
+    </header>
+    <section class="service">
+        <nav class="service__nav">
+            <ul class="service__ul">
+                <li class="service__li">
+                    <a href="#" class="service__li-a">
+                        <div class="service__logo">
+                            <svg class="video">
+                                <use xlink:href="sprite.svg#video"></use>
                             </svg>
-                        </a></li>
-                    <li class="header__li"><a class="header__li-a" href="#">Кейсы</a></li>
-                    <li class="header__li"><a class="header__li-a" href="#">Стоимость</a></li>
-                    <li class="header__li"><a class="header__li-a" href="#">Отзывы</a></li>
-                    <li class="header__li"><a class="header__li-a" href="#">Калькулятор</a></li>
-                    <li class="header__li"><a class="header__li-a" href="#">Контакты</a></li>
-                </ul>
-            </nav>
-            <div class="header__contacts">
-                <div class="header__message">
-                    <a href="#">
-                        <svg class="telegram header__telegram">
-                            <use xlink:href="sprite.svg#telegram"></use>
-                        </svg>
-                    </a>
-                    <a href="#">
-                        <svg class="whatsapp">
-                            <use xlink:href="sprite.svg#whatsapp"></use>
-                        </svg>
-                    </a>
+                        </div>
+                        <p class="service__li-title">Видео об услуге</p>
+                    </a></li>
+                <li class="service__li">
+                    <a href="#" class="service__li-a">
+                        <div class="service__logo">
+                            <svg class="offer">
+                                <use xlink:href="sprite.svg#offer"></use>
+                            </svg>
+                        </div>
+                        <p class="service__li-title">Коммерческое предложение</p>
+                    </a></li>
+                <li class="service__li">
+                    <a href="#" class="service__li-a">
+                        <div class="service__logo">
+                            <svg class="price">
+                                <use xlink:href="sprite.svg#price"></use>
+                            </svg>
+                        </div>
+                        <p class="service__li-title">Стоимость</p>
+                    </a></li>
+                <li class="service__li">
+                    <a href="#" class="service__li-a">
+                        <div class="service__logo">
+                            <svg class="answer">
+                                <use xlink:href="sprite.svg#answer"></use>
+                            </svg>
+                        </div>
+                        <p class="service__li-title">Вопросы и ответы</p>
+                    </a></li>
+                <li class="service__li">
+                    <a href="#" class="service__li-a">
+                        <div class="service__logo">
+                            <svg class="case">
+                                <use xlink:href="sprite.svg#case"></use>
+                            </svg>
+                        </div>
+                        <p class="service__li-title">Кейсы</p>
+                    </a></li>
+                <li class="service__li">
+                    <a href="#" class="service__li-a">
+                        <div class="service__logo">
+                            <svg class="danger">
+                                <use xlink:href="sprite.svg#danger"></use>
+                            </svg>
+                        </div>
+                        <p class="service__li-title">Этапы работ</p>
+                    </a></li>
+                <li class="service__li">
+                    <a href="#" class="service__li-a">
+                        <div class="service__logo">
+                            <svg class="calculator">
+                                <use xlink:href="sprite.svg#calculator"></use>
+                            </svg>
+                        </div>
+                        <p class="service__li-title">Калькулятор стоимости</p>
+                    </a></li>
+                <li class="service__li">
+                    <a href="#" class="service__li-a">
+                        <div class="service__logo">
+                            <svg class="other">
+                                <use xlink:href="sprite.svg#burger"></use>
+                            </svg>
+                        </div>
+                        <p class="service__li-title">Другие услуги</p>
+                    </a></li>
+            </ul>
+        </nav>
+        <div class="service__main">
+            <div class="audit">
+                <div class="audit__left">
 
                 </div>
-                <div class="header__phone">
-                    <a href="#" class="header__phone-a"><span class="header__span-phone">8 499-391-00-09</span><br>
-                        <span class="header__span-call">Обратный звонок</span></a>
-
-                </div>
+                <div class="audit__right"></div>
             </div>
-        </header>
-    
-</body>
 
+        </div>
+    </section>
+</body>
 </html>

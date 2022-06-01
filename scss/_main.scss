@@ -6,7 +6,7 @@
 
 a {
     text-decoration: none;
-   
+
 }
 
 ul li {
@@ -24,15 +24,44 @@ ul li {
     fill: #CDD2DD;
 
     &:hover {
-        fill:#28A8E9;
-               
+        fill: #28A8E9;
+
     }
 }
-.whatsapp{
+
+.whatsapp {
     height: 24px;
     width: 24px;
     fill: #CDD2DD;
-    &:hover{
+
+    &:hover {
         fill: #0DC143;
     }
+}
+
+.video {
+    width: 20px;
+    height: 14px;
+}
+
+.offer,
+.other {
+    width: 20px;
+    height: 20px;
+}
+
+.price {
+    width: 11px;
+    height: 15px;
+}
+
+.case,
+.danger,
+.answer {
+    height: 18px;
+    width: 18px;
+}
+.calculator{
+    width: 20px;
+    height: 18px;
 }
