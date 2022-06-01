@@ -1,11 +1,12 @@
 .service {
     display: flex;
-    
+
     // justify-content: space-between;
-  &__main{
-      width: 100%;
-  }
-       &__nav {
+    &__main {
+        width: 100%;
+    }
+
+    &__nav {
         padding-left: 60px;
         padding-right: 60px;
         padding-top: 40px;
@@ -49,19 +50,28 @@
 }
 
 .audit {
-   
-    height: 660px;
-    // width: 730px;
-    display: flex;
-    justify-content: space-between;
 
-    &__left {
-        width: 100%;
-        padding-left: 60px;
+    height: 640px;
+    background: #F8F8FB url(/img/audit-img.png);
+    background-repeat: no-repeat;
+    background-position: right;
+           padding-left: 60px;
         padding-top: 20px;
-        background: #F8F8FB url(/img/audit-img.png);
-        background-repeat: no-repeat;
-        background-position: right;
+
+
+    // display: flex;
+    // justify-content: space-between;
+
+    // &__left {
+    //     width: 100%;
+    //     padding-left: 60px;
+    //     padding-top: 20px;
+    //     background: #F8F8FB url(/img/audit-img.png);
+    //     background-repeat: no-repeat;
+    //     background-position: right;
+    // }
+    &__nav {
+        margin-top: 20px;
     }
 
     &__ul {
@@ -174,5 +184,5 @@
         margin-top: 15px;
     }
 
-   
+
 }
