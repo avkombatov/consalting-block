@@ -32,11 +32,31 @@
         <nav class="header__nav">
             <ul class="header__ul">
                 <li class="header__li"><a class="header__li-a" href="#">О компании</a></li>
-                <li class="header__li "><a class="header__li-a header__li-a_flex" href="#">Услуги
+                <li class="header__li header__li_active"><a class="header__li-a header__li-a_flex header__li-a_active"
+                        href="#">Услуги
                         <svg class="header__arrow-down">
                             <use xlink:href="sprite.svg#arrow-down"></use>
                         </svg>
-                    </a></li>
+                    </a>
+                    <div class="menu center-menu">
+                        <nav class="menu__main">
+                            <ul class="menu__main-ul">
+                                <li class="menu__main-li">
+                               
+                                    <a href="#">
+                                        бухгалтерские услуги</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <nav class="menu__consulting">
+                            <ul class="menu__consulting-ul">
+                                <li class="menu__consulting-li"></li>
+                            </ul>
+                        </nav>
+                        <nav class="menu__nav-block"></nav>
+                        <div class="menu__consultation"></div>
+                    </div>
+                </li>
                 <li class="header__li"><a class="header__li-a" href="#">Кейсы</a></li>
                 <li class="header__li"><a class="header__li-a" href="#">Стоимость</a></li>
                 <li class="header__li"><a class="header__li-a" href="#">Отзывы</a></li>
@@ -65,9 +85,7 @@
             </div>
         </div>
     </header>
-    <section class="menu">
-        
-    </section>
+
     <section class="service center">
         <nav class="service__nav">
             <ul class="service__ul">
@@ -147,45 +165,53 @@
         </nav>
         <div class="service__main">
             <div class="audit">
-                <!-- <div class="audit"> -->
-                    <nav class="audit__nav">
-                        <ul class="audit__ul">
-                            <li class="audit__li"><a href="#" class="audit__li-a">Главная</a></li>
-                            <span class="audit__li">-</span>
-                            <li class="audit__li"><a href="#" class="audit__li-a">Услуги</a></li>
-                            <span class="audit__li">-</span>
-                            <li class="audit__li"><a href="#" class="audit__li-a">Бухгалтерские услуги</a></li>
-                            <span class="audit__li">-</span>
-                            <li class="audit__li"><a href="#" class="audit__li-a service_active">Аудит бухгалтерии</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <h1 class="audit__h1">Аудит бухгалтерии</h1>
-                    <p class="audit__info">Годовой оборот вашей компании, млн. руб.</p>
-                    <ul class="audit__sum">
-                        <li class="audit__sum-li audit__sum-li_active">
-                            < 5 млн. руб. </li> <li class="audit__sum-li">
-                                5-7 млн. руб.
-                        </li>
-                        <li class="audit__sum-li">
-                            7-10 млн. руб.
-                        </li>
-                        <li class="audit__sum-li">
-                            > 10 млн. руб.
+                <nav class="audit__nav">
+                    <ul class="audit__ul">
+                        <li class="audit__li"><a href="#" class="audit__li-a">Главная</a></li>
+                        <span class="audit__li">-</span>
+                        <li class="audit__li"><a href="#" class="audit__li-a">Услуги</a></li>
+                        <span class="audit__li">-</span>
+                        <li class="audit__li"><a href="#" class="audit__li-a">Бухгалтерские услуги</a></li>
+                        <span class="audit__li">-</span>
+                        <li class="audit__li"><a href="#" class="audit__li-a service_active">Аудит бухгалтерии</a>
                         </li>
                     </ul>
-                    <p class="audit__price">от 59 900 руб.*</p>
-                    <button class="audit__button">Зафиксировать стоимость
-                        <svg class="arrow-button">
-                            <use xlink:href="sprite.svg#arrow-button"></use>
-                        </svg>
-                    </button>
-                    <p class="audit__footnote">*Не устроила цена? Обсудим индивидуальное предложение и найдем наиболее
-                        выгодные варианты сотрудничества</p>
-                <!-- </div> -->
+                </nav>
+                <h1 class="audit__h1">Аудит бухгалтерии</h1>
+                <p class="audit__info">Годовой оборот вашей компании, млн. руб.</p>
+                <ul class="audit__sum">
+                    <li class="audit__sum-li audit__sum-li_active">
+                        < 5 млн. руб. </li> <li class="audit__sum-li">
+                            5-7 млн. руб.
+                    </li>
+                    <li class="audit__sum-li">
+                        7-10 млн. руб.
+                    </li>
+                    <li class="audit__sum-li">
+                        > 10 млн. руб.
+                    </li>
+                </ul>
+                <p class="audit__price">от 59 900 руб.*</p>
+                <button class="audit__button">Зафиксировать стоимость
+                    <svg class="arrow-button">
+                        <use xlink:href="sprite.svg#arrow-button"></use>
+                    </svg>
+                </button>
+                <p class="audit__footnote">*Не устроила цена? Обсудим индивидуальное предложение и найдем наиболее
+                    выгодные варианты сотрудничества</p>
             </div>
         </div>
     </section>
+    <script>
+        document.querySelector('.header__li-a_active').onclick = function () {
+            let menu = document.querySelector('.menu');
+            if (menu.style.display === 'block') {
+                menu.style.display = 'none'
+            } else {
+                menu.style.display = "block"
+            }
+        }
+    </script>
 </body>
 
 </html>

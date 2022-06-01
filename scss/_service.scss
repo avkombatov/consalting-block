@@ -50,26 +50,13 @@
 }
 
 .audit {
-
     height: 640px;
     background: #F8F8FB url(/img/audit-img.png);
     background-repeat: no-repeat;
     background-position: right;
-           padding-left: 60px;
-        padding-top: 20px;
+    padding-left: 60px;
+    padding-top: 20px;
 
-
-    // display: flex;
-    // justify-content: space-between;
-
-    // &__left {
-    //     width: 100%;
-    //     padding-left: 60px;
-    //     padding-top: 20px;
-    //     background: #F8F8FB url(/img/audit-img.png);
-    //     background-repeat: no-repeat;
-    //     background-position: right;
-    // }
     &__nav {
         margin-top: 20px;
     }
