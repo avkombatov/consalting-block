@@ -17,6 +17,10 @@ ul li {
     padding-left: calc(50% - 585px);
     padding-right: calc(50% - 585px);
 }
+.center{
+    padding-left: calc(50% - 720px);
+    padding-right: calc(50% - 720px);
+}
 
 .telegram {
     width: 22px;
@@ -64,4 +68,9 @@ ul li {
 .calculator{
     width: 20px;
     height: 18px;
+}
+.arrow-button{
+    width: 12px;
+    height: 8.5px;
+    fill:white;
 }

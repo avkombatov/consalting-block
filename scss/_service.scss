@@ -1,12 +1,17 @@
 .service {
-    padding-left: 0;
-    padding-right: 0;
-    &__nav{
+    display: flex;
+    
+    // justify-content: space-between;
+  &__main{
+      width: 100%;
+  }
+       &__nav {
         padding-left: 60px;
         padding-right: 60px;
         padding-top: 40px;
     }
-    &__li{
+
+    &__li {
         margin-bottom: 30px;
     }
 
@@ -18,10 +23,10 @@
 
     &__li-a:hover .service__li-title {
         color: $hoverColor;
-       transition: 0.3s;
+        transition: 0.3s;
     }
 
-       &__li-title {
+    &__li-title {
         font-weight: 600;
         font-size: 15px;
         line-height: 135%;
@@ -41,4 +46,133 @@
         fill: black;
 
     }
+}
+
+.audit {
+   
+    height: 660px;
+    // width: 730px;
+    display: flex;
+    justify-content: space-between;
+
+    &__left {
+        width: 100%;
+        padding-left: 60px;
+        padding-top: 20px;
+        background: #F8F8FB url(/img/audit-img.png);
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+
+    &__ul {
+        display: flex;
+
+    }
+
+    &__li:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    &__li-a {
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 120%;
+        color: $colorText;
+
+        &:hover {
+            color: $hoverColor;
+            transition: 0.3s;
+        }
+    }
+
+    .service_active {
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 120%;
+        color: #AFAFB0;
+    }
+
+    &__sum {
+        display: flex;
+    }
+
+    &__sum-li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 108px;
+        height: 32px;
+        border-radius: 60px;
+        background-color: white;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 120%;
+        color: $colorText;
+        cursor: pointer;
+
+        &_active {
+            background: #46A44E;
+            color: white;
+        }
+    }
+
+    &__sum-li:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    &__h1 {
+        font-weight: 800;
+        font-size: 44px;
+        line-height: 120%;
+        margin-top: 50px;
+    }
+
+    &__info {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 150%;
+        color: $colorText;
+        margin-top: 150px;
+    }
+
+    &__sum {
+        margin-top: 15px;
+
+    }
+
+    &__price {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 135%;
+        color: #46A44E;
+        margin-top: 25px;
+    }
+
+    &__button {
+        margin-top: 30px;
+        width: 300px;
+        height: 56px;
+        background: #101628;
+        border-radius: 2px;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 135%;
+        color: white;
+
+        &:hover {
+            background: #282C38;
+            cursor: pointer;
+        }
+    }
+
+    &__footnote {
+        width: 380px;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 135%;
+        color: #8B8B8F;
+        margin-top: 15px;
+    }
+
+   
 }

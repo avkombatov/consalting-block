@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -65,7 +65,7 @@
             </div>
         </div>
     </header>
-    <section class="service">
+    <section class="service center">
         <nav class="service__nav">
             <ul class="service__ul">
                 <li class="service__li">
@@ -145,12 +145,44 @@
         <div class="service__main">
             <div class="audit">
                 <div class="audit__left">
-
+                    <nav class="audit__nav">
+                        <ul class="audit__ul">
+                            <li class="audit__li"><a href="#" class="audit__li-a">Главная</a></li>
+                            <span class="audit__li">-</span>
+                            <li class="audit__li"><a href="#" class="audit__li-a">Услуги</a></li>
+                            <span class="audit__li">-</span>
+                            <li class="audit__li"><a href="#" class="audit__li-a">Бухгалтерские услуги</a></li>
+                            <span class="audit__li">-</span>
+                            <li class="audit__li"><a href="#" class="audit__li-a service_active">Аудит бухгалтерии</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <h1 class="audit__h1">Аудит бухгалтерии</h1>
+                    <p class="audit__info">Годовой оборот вашей компании, млн. руб.</p>
+                    <ul class="audit__sum">
+                        <li class="audit__sum-li audit__sum-li_active">
+                            < 5 млн. руб. </li> <li class="audit__sum-li">
+                                5-7 млн. руб.
+                        </li>
+                        <li class="audit__sum-li">
+                            7-10 млн. руб.
+                        </li>
+                        <li class="audit__sum-li">
+                            > 10 млн. руб.
+                        </li>
+                    </ul>
+                    <p class="audit__price">от 59 900 руб.*</p>
+                    <button class="audit__button">Зафиксировать стоимость
+                        <svg class="arrow-button">
+                            <use xlink:href="sprite.svg#arrow-button"></use>
+                        </svg>
+                    </button>
+                    <p class="audit__footnote">*Не устроила цена? Обсудим индивидуальное предложение и найдем наиболее
+                        выгодные варианты сотрудничества</p>
                 </div>
-                <div class="audit__right"></div>
             </div>
-
         </div>
     </section>
 </body>
+
 </html>
