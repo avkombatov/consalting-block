@@ -18,7 +18,8 @@ ul li {
     padding-left: calc(50% - 585px);
     padding-right: calc(50% - 585px);
 }
-.center{
+
+.center {
     padding-left: calc(50% - 720px);
     padding-right: calc(50% - 720px);
 }
@@ -66,18 +67,59 @@ ul li {
     height: 18px;
     width: 18px;
 }
-.calculator{
+
+.calculator {
     width: 20px;
     height: 18px;
 }
-.arrow-button{
+
+.arrow-button {
     width: 12px;
     height: 8.5px;
-    fill:white;
+    fill: white;
+    margin-left: 5px;
 }
-.arrow-menu{
+
+.arrow-menu {
     width: 12px;
     height: 12px;
     fill: #46A44E;
     display: none;
+}
+
+.arrow-down {
+    width: 8px;
+    height: 6px;
+    fill: #46A44E;
+}
+
+.top {
+    width: 38px;
+    height: 20px;
+    background: #46A44E;
+     font-weight: 800;
+    font-size: 10px;
+    line-height: 120%;
+    display: inline-flex;
+    align-items: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: white;
+    justify-content: center;
+    
+}
+.new {
+    width: 38px;
+    height: 20px;
+    background: black;
+     font-weight: 800;
+    font-size: 10px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: white;
+    justify-content: center;
+    margin-left: 4px;
 }
